@@ -3,7 +3,6 @@ const app = express();
 const port = 7500;
 const fs = require('fs');
 var cors = require('cors')
-
 app.use(cors())
 
 const pincodeData = fs.readFileSync('./data/pincodeData.json', 'utf8');
