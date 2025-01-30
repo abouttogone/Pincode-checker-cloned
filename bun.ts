@@ -6,6 +6,8 @@ const dataFile = Bun.file("./data/pincodeData.json", {
 
 const pincodeData: Place[] = await dataFile.json();
 
+
+
 function Check(pincode: string) {
   return pincodeData?.filter((e) => {
     return e.Pincode === pincode;
